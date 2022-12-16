@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@media only screen and (min-width: 750px){
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+#headerContainer {
+    background-color: white;
+    width: 100%;
+    height: 120vh;
+}
+
+#headerTextContainer {
+    margin-top: 40vh;
+    width: 100%;
+    position: absolute;
+}
+
+.headerMain {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 6vh;
+    text-align: center;
+    animation: jiggle 5s linear infinite;
+
+}
+
+.subheaderMain {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    font-size: 4vh;
+    animation: jiggle 5s linear infinite;
+}
+
+.subheaderMain2 {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    font-size: 4vh;
+    animation: jiggle 5s linear infinite;
+}
+
+.largeBodyMain {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+
+@keyframes jiggle {
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(1deg);}
+    50%{transform: rotate(0deg);}
+    75%{transform: rotate(-1deg);}
+    100%{transform: rotate(0deg);}
+}
+
+#bodyContainer {
+    width: 100%;
+    height: 120vh;
+}
+
+#gridHolder {
+    width: 100%;
+}
+
+.gridContainer {
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    grid-template-columns: auto auto auto;
+}
+
+.gridItem {
+    display: grid;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    padding: 5px;
+    background-color: white;
+    border: black solid 2px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+}
+
+.gridItem p {
+    line-height: 250px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+#item1 {grid-column: 1; grid-row: 1;}
+#item2 {grid-column: 2; grid-row: 1;}
+#item3 {grid-column: 3; grid-row: 1;}
+#item4 {grid-column: 1; grid-row: 2;}
+#item5 {grid-column: 2; grid-row: 2;}
+#item6 {grid-column: 3; grid-row: 2;}
+#item7 {grid-column: 1; grid-row: 3;}
+#item8 {grid-column: 2; grid-row: 3;}
+#item9 {grid-column: 3; grid-row: 3;}
+
+div a p:hover {
+    background-color: black;
+    transition: 1.5s;
+    color: white;
+    border-radius: 5px;
+}
+h1:hover {
+    transition: 1.5s;
+}
+
+#progressBarContainer {
+    width: 80vw;
+    margin: auto;
+}
+
+.bar {
+    margin-bottom: 5vh;;
+}
+
+span:hover {
+    color:red;
+}
+
+}
+

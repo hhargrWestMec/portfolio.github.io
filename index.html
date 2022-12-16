@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile-style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#htmlBar" ).progressbar({
+            value: 70
+            });
+        } );
+
+        $( function() {
+            $( "#cssBar" ).progressbar({
+            value: 50
+            });
+        } );
+
+        $( function() {
+            $( "#jsBar" ).progressbar({
+            value: 55
+            });
+        } );
+        $( function() {
+            $( "#pyBar" ).progressbar({
+            value: 10
+           });
+        } );
+
+        $("#htmlBar").css({ 'background': '#eb3d34 repeat-x 50% 50%;' });
+        $("#htmlBar > div").css({ 'background': 'url(images/lime-1x100.png) #eb3d34 repeat-x 50% 50%;' });
+
+    </script>
+  
+</head>
+<body>
+
+    <div id="headerContainer">
+        <div id="headerTextContainer">
+
+            <h1 class="headerMain"> 
+                <span>&lt;h1&gt;</span> <span>Hayden</span> <span>Hargreaves</span> <span>&lt;h1&gt;</span>
+            </h1>
+
+            <h2 class="subheaderMain"> 
+                <span>&lt;h2&gt;</span> <span>Beginner</span> <span>Web</span> <span>Developer</span> <span>&lt;h2&gt;</span>
+            </h2>
+
+        </div>
+    </div>
+
+    <div id="bodyContainer">
+
+        <h2 class="subheaderMain2" style="margin-bottom: 10vh;"> 
+            <span>&lt;h2&gt;</span> <span>Projects</span> <span>&lt;h2&gt;</span>
+        </h2>
+
+        <div id="gridHolder">
+            <div class="gridContainer">
+                <div id="item1" class="gridItem"> <a href="https://hhargrwestmec.github.io/basicCSSResume.github.io/" target="_blank"><p><span>&lt;p&gt;</span> <span>Resume</span> <span>&lt;p&gt;</span></p></a> </div>
+                <div id="item2" class="gridItem"> <a href="https://hhargrwestmec.github.io/basicJavaScriptCalculator.github.io/" target="_blank"><p><span>&lt;p&gt;</span> <span>JS</span> <span>Calculator</span> <span>&lt;p&gt;</span></p></a> </div>
+                <div id="item3" class="gridItem"> <a href="https://hhargrwestmec.github.io/javascriptQuizApp.github.io/" target="_blank"><p><span>&lt;p&gt;</span> <span>CSS</span> <span>Quiz</span> <span>&lt;p&gt;</span></p></a> </div>
+                <div id="item4" class="gridItem"> <a href="https://hhargrwestmec.github.io/defuseTheBomb.github.io/" target="_blank"><p><span>&lt;p&gt;</span> <span>Bomb</span> <span>Defuse</span> <span>Game</span> <span>&lt;p&gt;</span></p></a> </div>
+                <div id="item5" class="gridItem"> <a href="https://hhargrwestmec.github.io/crazyClock.github.io/" target="_blank"><p><span>&lt;p&gt;</span> <span>CSS</span> <span>Animation</span> <span>&lt;p&gt;</span></p></a> </div>
+                <div id="item6" class="gridItem"> <a href="https://hhargrwestmec.github.io/FighterJetsPhotoAlbum.github.io/" target="_blank"><p><span>&lt;p&gt;</span> <span>Photo</span> <span>Gallery</span> <span>&lt;p&gt;</span></p></a> </div>
+                <div id="item7" class="gridItem"> <a href="https://hhargrwestmec.github.io/flexboxLayout3.github.io/" target="_blank"><p><span>&lt;p&gt;</span> <span>Flexbox</span> <span>Template</span> <span>&lt;p&gt;</span></p></a> </div>
+                <div id="item8" class="gridItem"> <a href="https://hhargrwestmec.github.io/basicForms.github.io/" target="_blank"><p><span>&lt;p&gt;</span> <span>Basic</span> <span>HTML</span> <span>Form</span> <span>&lt;p&gt;</span></p></a> </div>
+                <div id="item9" class="gridItem"> <a href="https://hhargrwestmec.github.io/JQuery.github.io/" target="_blank"><p><span>&lt;p&gt;</span> <span>JQuery</span> <span>Webpage</span> <span>&lt;p&gt;</span></p></a> </div>
+            </div>
+        </div>
+
+        <h2 class="subheaderMain2" style="margin-bottom: 10vh; margin-top: 30vh;"> 
+            <span>&lt;h2&gt;</span> <span>Languages</span> <span>&lt;h2&gt;</span>
+        </h2>
+            <div id="progressBarContainer">
+
+                <h3 class="largeBodyMain"> 
+                    <span>&lt;h3&gt;</span> <span>HTML</span> <span>&lt;h3&gt;</span>
+                </h3>
+                    <div id="htmlBar" class="bar"></div>
+
+                <h3 class="largeBodyMain"> 
+                    <span>&lt;h3&gt;</span> <span>CSS</span> &lt;h3&gt;</span>
+                </h3>
+                    <div id="cssBar" class="bar"></div>
+
+                <h3 class="largeBodyMain"> 
+                    <span>&lt;h3&gt;</span> <span>Javascript</span> <span>&lt;h3&gt;</span>
+                </h3>
+                    <div id="jsBar" class="bar"></div>
+
+                <h3 class="largeBodyMain"> 
+                    <span>&lt;h3&gt;</span> <span>Python</span> <span>&lt;h3&gt;</span>
+                </h3>
+                    <div id="pyBar" class="bar"></div>
+
+                    <div style="height: 10vh;"></div>
+            </div>
+
+
+
+    </div>
+    
+</body>
+</html>
