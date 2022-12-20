@@ -75,8 +75,8 @@
 
 .gridItem {
     display: grid;
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     padding: 5px;
     background-color: white;
@@ -87,7 +87,11 @@
 }
 
 .gridItem p {
-    line-height: 210px;
+    margin-top: 0px;
+    padding-top: 60px;
+    /*line-height: 150px;*/
+    font-size: 2vw;
+    height: 90px;
 }
 
 a {
